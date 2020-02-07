@@ -67,5 +67,9 @@ public class ParkingController {
        return earning;
     }
 
-
+    @PutMapping("/deleteSpot")
+    public String deleteSpotById(@RequestBody ParkingSpotDTO parkingSpotDTO){
+       parkingService.deleteSpotById(parkingSpotDTO.getSpotId());
+       return "Spot deleted";
+    }
 }

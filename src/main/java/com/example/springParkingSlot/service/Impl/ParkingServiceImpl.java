@@ -119,5 +119,10 @@ public class ParkingServiceImpl implements ParkingService {
         return earning;
     }
 
+    @Override
+    public void deleteSpotById(String spotId) {
+        parkingSpotRepository.deleteById(spotId);
+    }
+
 
 }

@@ -16,4 +16,6 @@ public interface ParkingService {
    ParkingDetailsDTO getParkingDetails(UserDTO userDTO);
 
     double totalEarning();
+
+    void deleteSpotById(String spotId);
 }
